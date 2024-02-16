@@ -3,6 +3,13 @@
  * @date 2023-12-09
  */
 
+/**
+ * 94. Binary Tree Inorder Traversal
+ * https://leetcode.com/problems/binary-tree-inorder-traversal/description/
+ *
+ * Given the root of a binary tree, return the inorder traversal of its nodes' values.
+ */
+
 function inorderTraversal(root: TreeNode | null): number[] {
   let result: number[] = [];
   if (root?.left === undefined && root?.val !== undefined) {
@@ -48,3 +55,15 @@ function inorderTraversal(root: TreeNode | null): number[] {
 //   }
 //   return result;
 // }
+
+//  Definition for a binary tree node.
+class TreeNode {
+  val: number;
+  left: TreeNode | null;
+  right: TreeNode | null;
+  constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {
+    this.val = val === undefined ? 0 : val;
+    this.left = left === undefined ? null : left;
+    this.right = right === undefined ? null : right;
+  }
+}

@@ -2,6 +2,12 @@
  * @author  Mathias Brosens
  * @date    2023-12-19
  */
+
+/**
+ * 661. Image Smoother
+ * https://leetcode.com/problems/image-smoother/description/
+ */
+
 function imageSmoother(img: number[][]): number[][] {
   const result: number[][] = [];
   for (let i = 0; i < img.length; i++) {

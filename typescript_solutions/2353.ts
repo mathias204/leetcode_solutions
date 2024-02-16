@@ -2,6 +2,12 @@
  * @author  Mathias Brosens
  * @date    2023-12-17
  */
+
+/**
+ * 2353. Design a Food Rating System
+ * https://leetcode.com/problems/design-a-food-rating-system/description/
+ */
+
 class FoodRatings {
   private foodRating: Map<string, Map<string, number>> = new Map<
     string,
